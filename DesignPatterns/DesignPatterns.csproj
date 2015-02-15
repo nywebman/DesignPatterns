@@ -48,15 +48,19 @@
     <Compile Include="Factory\ElectronicsFactory.cs" />
     <Compile Include="Factory\Stereo.cs" />
     <Compile Include="Factory\Television.cs" />
+    <Compile Include="Observer\Cirt.cs" />
+    <Compile Include="Observer\CirtMain.cs" />
+    <Compile Include="Observer\CirtNotified.cs" />
+    <Compile Include="Observer\ICirtNotified.cs" />
+    <Compile Include="Observer\ObserverExample1.cs" />
+    <Compile Include="Observer\ProductDefectCirt.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Observer\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

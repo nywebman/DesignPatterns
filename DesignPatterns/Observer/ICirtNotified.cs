@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns
+namespace DesignPatterns.Observer
 {
-    class Program
+    public interface ICirtNotified
     {
-        static void Main(string[] args)
-        {
-            
-        }
+        void Nofity(Cirt cirt);
     }
 }
