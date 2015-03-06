@@ -70,6 +70,11 @@
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\Repository.cs" />
     <Compile Include="Repository\RepositoryMain.cs" />
+    <Compile Include="Strategy\Duck.cs" />
+    <Compile Include="Strategy\IQuackBehavior.cs" />
+    <Compile Include="Strategy\LoudQuack.cs" />
+    <Compile Include="Strategy\Squeak.cs" />
+    <Compile Include="Strategy\StrategyExample1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
