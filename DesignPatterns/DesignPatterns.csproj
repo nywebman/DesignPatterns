@@ -75,6 +75,7 @@
     <Compile Include="Strategy\LoudQuack.cs" />
     <Compile Include="Strategy\Squeak.cs" />
     <Compile Include="Strategy\StrategyExample1.cs" />
+    <Compile Include="UnitOfWOrk\IUnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
