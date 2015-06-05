@@ -1,0 +1,42 @@
+﻿Objective:
+To protect against null references
+
+Example
+
+var autoRepo = new AutoRepo();
+var autos = autoRepo.FindAllByName("ford");
+
+foreach(var auto in autos)
+{
+auto.Start();
+auto.Stop();
+}
+
+
+-convention that FindAllByName should not pass back null, should pass back empty collection
+->no problem calling foreach
+-if null came back, foreach would blow up
+
+-trying to avoid all of the if a==null w/o worrying about nullref exception
+
+{
+	var a=somethmeod();
+	if(a==null)
+		return;
+	a.DoSomethi();
+}
+
+cant always get rid of it
+
+
+----------------------
+Base class (AutomobileBase) with null subclass that implements the base (NullAutomobile)
+and other classes that implement the base (MiniCooper, and BMW)
+----------------------
+
+fewer null checks needed
+less complexity
+callers dont need to worry about null objects
+->must be aware of null object implementations exist so that other people dont try to do null checks since not needed
+
+can also check for euqality with NullAutomobile against MiniCooper and others from AutomobileBase without worrying it will blow up
