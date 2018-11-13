@@ -55,6 +55,10 @@
     <Compile Include="Factory\ElectronicsFactory.cs" />
     <Compile Include="Factory\Stereo.cs" />
     <Compile Include="Factory\Television.cs" />
+    <Compile Include="Null Object\AutomobileBase.cs" />
+    <Compile Include="Null Object\AutoRepository.cs" />
+    <Compile Include="Null Object\MiniCooper.cs" />
+    <Compile Include="Null Object\NullObjectPatternMain.cs" />
     <Compile Include="Observer\Cirt.cs" />
     <Compile Include="Observer\CirtMain.cs" />
     <Compile Include="Observer\CirtNotified.cs" />
@@ -81,7 +85,9 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Null Object\notes.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
