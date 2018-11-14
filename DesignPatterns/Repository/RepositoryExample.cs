@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPatterns.Repository
 {
-    public class RepositoryMain
+    public class RepositoryExample : IDesignPatternTemplateMain
     {
         //https://github.com/remondo/RepositoryPatternEntityFramework
-        public RepositoryMain()
+        public void Execute()
         {
             using (var dataContext = new HotelContext())
             {
