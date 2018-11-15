@@ -5,6 +5,7 @@ using DesignPatterns.IOC;
 using DesignPatterns.Null_Object;
 using DesignPatterns.Observer;
 using DesignPatterns.Repository;
+using DesignPatterns.Singleton;
 using DesignPatterns.Strategy;
 
 namespace DesignPatterns
@@ -18,7 +19,7 @@ namespace DesignPatterns
             var builder = new ContainerBuilder();
             builder.RegisterType<ConsoleOutput>().As<IOutput>();
             builder.RegisterType<TodayWriter>().As<IDateWriter>();
-            builder.RegisterType<CarFactoryExample>().As<IDesignPatternTemplateMain>();
+            builder.RegisterType<SingletonExample>().As<IDesignPatternTemplateMain>();
 
             Container = builder.Build();
 
