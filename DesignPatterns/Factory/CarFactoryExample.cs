@@ -12,5 +12,10 @@
             IFactory bike = factory.GetVehicle("Q50");
             bike.Drive(20);
         }
+
+        public void PrintMetadata()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

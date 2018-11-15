@@ -15,5 +15,10 @@
             ibm.Price = 120.50;
             ibm.Price = 120.75;
         }
+
+        public void PrintMetadata()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

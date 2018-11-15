@@ -15,5 +15,10 @@
             auto.Start();
             auto.Stop();
         }
+
+        public void PrintMetadata()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

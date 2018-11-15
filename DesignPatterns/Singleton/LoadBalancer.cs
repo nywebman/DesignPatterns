@@ -6,6 +6,7 @@ namespace DesignPatterns.Singleton
     /// <summary>
     /// The 'Singleton' class
     /// </summary>
+    [PatternMetadata("Singleton", "Creational")]
     public sealed class LoadBalancer
     {
         // Static members are 'eagerly initialized', that is, 

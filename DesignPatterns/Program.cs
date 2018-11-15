@@ -19,7 +19,7 @@ namespace DesignPatterns
             var builder = new ContainerBuilder();
             builder.RegisterType<ConsoleOutput>().As<IOutput>();
             builder.RegisterType<TodayWriter>().As<IDateWriter>();
-            builder.RegisterType<SingletonExample>().As<IDesignPatternTemplateMain>();
+            builder.RegisterType<StrategyExample>().As<IDesignPatternTemplateMain>();
 
             Container = builder.Build();
 
@@ -30,6 +30,7 @@ namespace DesignPatterns
 
             DesignPatternMain = Container.Resolve<IDesignPatternTemplateMain>();
             DesignPatternMain.Execute();
+            var a=
             Console.Read();
         }
 

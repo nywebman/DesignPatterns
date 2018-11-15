@@ -5,6 +5,7 @@
     /// </summary>
     public class StrategyExample : IDesignPatternTemplateMain
     {
+        public StrategyExample() => PrintMetadata();
         public void Execute()
         {
             //Example 1
@@ -33,5 +34,6 @@
             var duck2 = new Duck(new Squeak());
             duck2.Quack();
         }
+        public void PrintMetadata() => PatternMetadataAttribute.PrintPatternInfo<SortedList>();
     }
 }

@@ -4,6 +4,7 @@ namespace DesignPatterns.Singleton
 {
     public class SingletonExample : IDesignPatternTemplateMain
     {
+        public SingletonExample() => PrintMetadata();
         public void Execute()
         {
             LoadBalancer b1 = LoadBalancer.GetLoadBalancer();
@@ -25,5 +26,6 @@ namespace DesignPatterns.Singleton
                 Console.WriteLine("Dispatch request to: " + serverName);
             }
         }
+        public void PrintMetadata() => PatternMetadataAttribute.PrintPatternInfo<LoadBalancer>();
     }
 }

@@ -7,6 +7,7 @@ namespace DesignPatterns.Strategy
     /// <summary>
     /// The 'Context' class
     /// </summary>
+    [PatternMetadata("Strategy", "Behavioral")]
     public class SortedList
     {
         private List<string> _list = new List<string>();

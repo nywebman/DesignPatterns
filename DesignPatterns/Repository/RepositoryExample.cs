@@ -33,5 +33,10 @@ namespace DesignPatterns.Repository
                 Console.ReadKey();
             }
         }
+
+        public void PrintMetadata()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
